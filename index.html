@@ -4,14 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bilge Balga — Software Developer building web applications, backend systems, and embedded projects.">
-  <meta name="keywords" content="Software Developer, Web Applications, Backend, API, Raspberry Pi, Python, Go, JavaScript">
+  <meta name="description"
+    content="Bilge Balga — Software Developer building web applications, backend systems, and embedded projects.">
+  <meta name="keywords"
+    content="Software Developer, Web Applications, Backend, API, Raspberry Pi, Python, Go, JavaScript">
   <meta name="author" content="Bilge Balga">
   <title>Bilge Balga — Software Developer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -30,13 +34,19 @@
 
       <nav aria-label="Primary navigation">
         <ul class="nav__links" id="navLinks">
-          <li><a href="#about"      class="nav__link">About</a></li>
-          <li><a href="#stack"      class="nav__link">Stack</a></li>
-          <li><a href="#experience" class="nav__link">Experience</a></li>
-          <li><a href="#work"       class="nav__link">Projects</a></li>
-          <li><a href="#contact"    class="nav__link">Contact</a></li>
+          <li><a href="#about" class="nav__link" data-i18n="nav_about">About</a></li>
+          <li><a href="#stack" class="nav__link" data-i18n="nav_stack">Stack</a></li>
+          <li><a href="#experience" class="nav__link" data-i18n="nav_exp">Experience</a></li>
+          <li><a href="#work" class="nav__link" data-i18n="nav_work">Projects</a></li>
+          <li><a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a></li>
         </ul>
       </nav>
+
+      <div class="lang-switch">
+        <button id="btn-en" class="is-active" aria-label="English">EN</button>
+        <span class="lang-sep">|</span>
+        <button id="btn-tr" aria-label="Türkçe">TR</button>
+      </div>
 
       <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span>
@@ -64,44 +74,60 @@
         <div class="hero__text">
           <p class="hero__eyebrow">
             <span class="dot" aria-hidden="true"></span>
-            Available for new roles
+            <span data-i18n="hero_available">Available for new roles</span>
           </p>
 
           <h1 class="hero__name">Bilge Balga</h1>
-          <p class="hero__role">Backend Engineer & AI Integrations Specialist</p>
+          <p class="hero__role" data-i18n="hero_role">Backend Engineer & AI Integrations</p>
 
           <p class="hero__tagline" aria-label="Focus areas: Backend systems, API design, AI and ML integration">
-            <span>Backend Systems</span>
+            <span data-i18n="hero_tag1">Backend Systems</span>
             <span class="tag-sep" aria-hidden="true">•</span>
-            <span>API Design</span>
+            <span data-i18n="hero_tag2">API Design</span>
             <span class="tag-sep" aria-hidden="true">•</span>
-            <span>AI & ML Integration</span>
+            <span data-i18n="hero_tag3">AI & ML Integration</span>
           </p>
 
           <div class="hero__actions">
-            <a href="#work"    class="btn btn--solid">View Projects</a>
-            <a href="#contact" class="btn btn--outline">Contact</a>
+            <a href="#work" class="btn btn--solid" data-i18n="hero_btn_work">View Projects</a>
+            <a href="#contact" class="btn btn--outline" data-i18n="hero_btn_contact">Contact</a>
           </div>
 
           <ul class="hero__socials" aria-label="Social links">
             <li>
-              <a href="https://github.com/BilgeBalga" aria-label="GitHub" class="social-link" target="_blank" rel="noopener noreferrer">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <a href="https://github.com/BilgeBalga" aria-label="GitHub" class="social-link" target="_blank"
+                rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/bilge-balga/" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <a href="https://www.linkedin.com/in/bilge-balga/" aria-label="LinkedIn" class="social-link"
+                target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
               </a>
             </li>
             <li>
               <a href="mailto:bilbalga@gmail.com" aria-label="Email" class="social-link">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/bilge.codes" aria-label="Instagram" class="social-link" target="_blank" rel="noopener noreferrer">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              <a href="https://www.instagram.com/bilge.codes" aria-label="Instagram" class="social-link" target="_blank"
+                rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                </svg>
               </a>
             </li>
           </ul>
@@ -111,25 +137,31 @@
         <aside class="hero__services" aria-label="Service areas">
           <div class="service-tile reveal-item">
             <span class="service-num" aria-hidden="true">01</span>
-            <h2 class="service-title">Backend Engineering</h2>
-            <p class="service-desc">Developing scalable REST APIs and backend services using Python, FastAPI, Flask, and Go. Building production-ready solutions with JWT-based security, database design (MySQL, MongoDB), and hardware–software integration in Raspberry Pi-based systems</p>
+            <h2 class="service-title" data-i18n="svc_title1">Backend Engineering</h2>
+            <p class="service-desc" data-i18n="svc_desc1">Developing scalable REST APIs and backend services using
+              Python, FastAPI, Flask, and Go. Building production-ready solutions with JWT-based security, database
+              design (MySQL, MongoDB), and hardware–software integration in Raspberry Pi-based systems</p>
           </div>
           <div class="service-tile reveal-item">
             <span class="service-num" aria-hidden="true">02</span>
-            <h2 class="service-title">AI & ML Integration</h2>
-            <p class="service-desc">Developing machine learning and NLP pipelines — experienced in data cleaning, tokenization, and data preparation for models. Using Scikit-learn, TensorFlow, and NLTK to build models and integrate AI into backend systems.</p>
+            <h2 class="service-title" data-i18n="svc_title2">AI & ML Integration</h2>
+            <p class="service-desc" data-i18n="svc_desc2">Developing machine learning and NLP pipelines — experienced in
+              data cleaning, tokenization, and data preparation for models. Using Scikit-learn, TensorFlow, and NLTK to
+              build models and integrate AI into backend systems.</p>
           </div>
           <div class="service-tile reveal-item">
             <span class="service-num" aria-hidden="true">03</span>
-            <h2 class="service-title">Data Pipelines & Scraping</h2>
-            <p class="service-desc">Developing web scraping processes with BeautifulSoup and Pandas for large-scale data collection and processing. Cleaning and optimizing raw data to create high-quality datasets for NLP models.</p>
+            <h2 class="service-title" data-i18n="svc_title3">Data Pipelines & Scraping</h2>
+            <p class="service-desc" data-i18n="svc_desc3">Developing web scraping processes with BeautifulSoup and
+              Pandas for large-scale data collection and processing. Cleaning and optimizing raw data to create
+              high-quality datasets for NLP models.</p>
           </div>
         </aside>
 
       </div>
 
       <div class="hero__scroll" aria-hidden="true">
-        <span>Scroll</span>
+        <span data-i18n="hero_scroll">Scroll</span>
         <div class="hero__scroll-line"></div>
       </div>
     </section>
@@ -141,76 +173,70 @@
       <div class="section__inner">
         <header class="section__header">
           <span class="section__num" aria-hidden="true">01</span>
-          <h2 class="section__title" id="about-heading">About</h2>
+          <h2 class="section__title" id="about-heading" data-i18n="about_title">About</h2>
         </header>
 
         <div class="bento" role="region" aria-label="About me">
 
           <!-- Bio -->
           <article class="bento__cell bento__cell--bio">
-            <p class="label">Who I am</p>
-            <p class="bento__bio-text">
-              I am Bilge Balga. I graduated with a degree in <strong> Computer Engineering </strong> in 2024. I am a software developer focusing on backend development and machine learning.
-              Currently, I work in hardware and software integration; I manage the <strong> Python </strong> development processes of  <strong> Raspberry Pi-based </strong> systems. In my previous experiences, I developed full-stack web projects using Go, React, and Vue.js. I also built the backend and APIs of a real estate system with Python Flask, and performed data optimizations for NLP models.
+            <p class="label" data-i18n="about_who">Who I am</p>
+            <p class="bento__bio-text" data-i18n="about_p1">
+              I am Bilge Balga. I graduated with a degree in <strong> Computer Engineering </strong> in 2024. I am a
+              software developer focusing on backend development and machine learning.
+              Currently, I work in hardware and software integration; I manage the <strong> Python </strong> development
+              processes of <strong> Raspberry Pi-based </strong> systems. In my previous experiences, I developed
+              full-stack web projects using Go, React, and Vue.js. I also built the backend and APIs of a real estate
+              system with Python Flask, and performed data optimizations for NLP models.
             </p>
-            <p class="bento__bio-text">
-              Outside of my professional work, I constantly keep creating; along with my personal projects, I develop customer automations for clinics and custom web projects for companies. Additionally, I previously contributed to knowledge sharing by working as an assistant instructor at BTK Academy and Tech Istanbul.
+            <p class="bento__bio-text" data-i18n="about_p2">
+              Outside of my professional work, I constantly keep creating; along with my personal projects, I develop
+              customer automations for clinics and custom web projects for companies. Additionally, I previously
+              contributed to knowledge sharing by working as an assistant instructor at BTK Academy and Tech Istanbul.
               My goal is to build simple and sustainable systems that solve complex problems with technology.
             </p>
           </article>
 
           <!-- Currently working on -->
           <article class="bento__cell bento__cell--now">
-            <p class="label">Currently working on</p>
+            <p class="label" data-i18n="about_now">Currently working on</p>
             <ul class="bento__now-list">
               <li>
                 <span class="now-dot" aria-hidden="true"></span>
-                Raspberry Pi-based systems
+                <span data-i18n="now_li1">Raspberry Pi-based systems</span>
               </li>
               <li>
                 <span class="now-dot" aria-hidden="true"></span>
-                FastAPI backends &amp; scalable AI integrations
+                <span data-i18n="now_li2">FastAPI backends &amp; scalable AI integrations</span>
               </li>
               <li>
-                
+
               </li>
             </ul>
           </article>
 
           <!-- Education -->
           <article class="bento__cell bento__cell--edu">
-            <p class="label">Education</p>
-            <p class="bento__degree">B.S. Computer Engineering</p>
-            <p class="bento__school">Selcuk University — 2020–2024</p>
+            <p class="label" data-i18n="edu_label">Education</p>
+            <p class="bento__degree" data-i18n="edu_deg">B.S. Computer Engineering</p>
+            <p class="bento__school" data-i18n="edu_univ">Selcuk University — 2020–2024</p>
             <span class="bento__gpa">GPA 3.36 / 4.00</span>
-          </article>
-
-          <!-- Stat: projects -->
-          <article class="bento__cell bento__cell--stat">
-            <p class="bento__stat-num" data-target="8" aria-label="8 or more projects">0</p>
-            <p class="bento__stat-label">Projects shipped</p>
-          </article>
-
-          <!-- Stat: internships -->
-          <article class="bento__cell bento__cell--stat">
-            <p class="bento__stat-num" data-target="3" aria-label="3 internships">0</p>
-            <p class="bento__stat-label">Internships</p>
           </article>
 
           <!-- Location -->
           <article class="bento__cell bento__cell--loc">
-            <p class="label">Based in</p>
-            <p class="bento__city">Antalya, Turkey</p>
+            <p class="label" data-i18n="loc_label">Based in</p>
+            <p class="bento__city" data-i18n="loc_val">Antalya, Turkey</p>
             <!-- <span class="bento__avail">Open to remote &amp; on-site</span> -->
           </article>
 
           <!-- Leadership -->
           <article class="bento__cell bento__cell--certs">
-            <p class="label">Leadership &amp; Recognition</p>
+            <p class="label" data-i18n="certs_label">Leadership &amp; Recognition</p>
             <ul class="bento__certs">
-              <li>AI Expertise Bootcamp Instructor — Tech Istanbul</li>
-              <li>Advanced ML &amp; AI Workshop Instructor — BTK Academy</li>
-              <li>GDG Antalya Community Member</li>
+              <li data-i18n="cert1">AI Expertise Bootcamp Instructor — Tech Istanbul</li>
+              <li data-i18n="cert2">Advanced ML &amp; AI Workshop Instructor — BTK Academy</li>
+              <li data-i18n="cert3">GDG Antalya Community Member</li>
               <li>Samsung &amp; UNDP Innovation Campus</li>
             </ul>
           </article>
@@ -226,120 +252,138 @@
       <div class="section__inner">
         <header class="section__header">
           <span class="section__num" aria-hidden="true">02</span>
-          <h2 class="section__title" id="stack-heading">Stack</h2>
+          <h2 class="section__title" id="stack-heading" data-i18n="stack_title">Stack</h2>
         </header>
 
         <div class="stack-grid">
 
           <div class="stack-col reveal-item">
-            <h3 class="stack-col__title">Languages</h3>
+            <h3 class="stack-col__title" data-i18n="stack_col1">Languages</h3>
             <ul class="stack-list">
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Python
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/go/go-original-wordmark.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/go/go-original-wordmark.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Go
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/javascript/javascript-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/javascript/javascript-original.svg"
+                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
                 JavaScript
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/csharp/csharp-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/csharp/csharp-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 C#
               </li>
             </ul>
           </div>
 
           <div class="stack-col reveal-item">
-            <h3 class="stack-col__title">Web &amp; APIs</h3>
+            <h3 class="stack-col__title" data-i18n="stack_col2">Web &amp; APIs</h3>
             <ul class="stack-list">
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/react/react-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/react/react-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 React
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/fastapi/fastapi-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/fastapi/fastapi-original.svg"
+                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
                 FastAPI
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/flask/flask-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true" style="filter:invert(1)">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/flask/flask-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true" style="filter:invert(1)">
                 Flask
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/django/django-plain.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true" style="filter:invert(1)">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/django/django-plain.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true" style="filter:invert(1)">
                 Django
               </li>
             </ul>
           </div>
 
           <div class="stack-col reveal-item">
-            <h3 class="stack-col__title">Tools</h3>
+            <h3 class="stack-col__title" data-i18n="stack_col3">Tools</h3>
             <ul class="stack-list">
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/docker/docker-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/docker/docker-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Docker
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/git/git-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/git/git-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Git
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/linux/linux-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/linux/linux-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Linux
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/mysql/mysql-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/mysql/mysql-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 MySQL / MongoDB
               </li>
             </ul>
           </div>
 
           <div class="stack-col reveal-item">
-            <h3 class="stack-col__title">AI & Data Science</h3>
+            <h3 class="stack-col__title" data-i18n="stack_col4">AI & Data Science</h3>
             <ul class="stack-list">
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/tensorflow/tensorflow-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/tensorflow/tensorflow-original.svg"
+                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
                 TensorFlow
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/scikitlearn/scikitlearn-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img
+                  src="data:image/png;base64,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"
+                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
                 Scikit-learn
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/pandas/pandas-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/pandas/pandas-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Pandas / NumPy
               </li>
               <li class="stack-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="flex-shrink:0;color:var(--tx-3)"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                NLTK / NLP
-              </li>
-              <li class="stack-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="flex-shrink:0;color:var(--tx-3)"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" width="20"
+                  height="20" loading="lazy" aria-hidden="true">
                 Streamlit / HuggingFace
               </li>
             </ul>
           </div>
 
           <div class="stack-col reveal-item">
-            <h3 class="stack-col__title">Embedded & Vision</h3>
+            <h3 class="stack-col__title" data-i18n="stack_col5">Embedded & Vision</h3>
             <ul class="stack-list">
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/raspberrypi/raspberrypi-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/raspberrypi/raspberrypi-original.svg"
+                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
                 Raspberry Pi
               </li>
               <li class="stack-item">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="flex-shrink:0;color:var(--tx-3)"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-                OpenCV
+                <img src="https://opencv.org/wp-content/uploads/2022/07/OpenCV-logo.png" alt="" width="20" height="20"
+                  loading="lazy" aria-hidden="true">
+                Open Cv
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/linux/linux-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/linux/linux-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Linux Systems
               </li>
               <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt="" width="20" height="20" loading="lazy" aria-hidden="true">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/python/python-original.svg" alt=""
+                  width="20" height="20" loading="lazy" aria-hidden="true">
                 Python / C
               </li>
             </ul>
@@ -356,71 +400,105 @@
       <div class="section__inner">
         <header class="section__header">
           <span class="section__num" aria-hidden="true">03</span>
-          <h2 class="section__title" id="exp-heading">Experience</h2>
+          <h2 class="section__title" id="exp-heading" data-i18n="exp_title">Experience</h2>
         </header>
 
         <ol class="timeline" reversed>
 
           <li class="timeline__item reveal-item">
             <div class="timeline__meta">
-              <time class="timeline__date">Oct – Nov 2024</time>
+              <time class="timeline__date" data-i18n="exp_mth1">Oct – Nov 2024</time>
               <span class="timeline__company">Bexfa Technologies</span>
             </div>
             <div class="timeline__body">
-              <h3 class="timeline__role">Software Developer</h3>
-              <p class="timeline__desc">
-                Working on hardware–software integration in a <strong>Raspberry Pi–based</strong> system. Managing system control and validation processes for <strong>Python-based</strong> applications. Responsible for testing configuration-based structures in field environments and ensuring system stability.
+              <h3 class="timeline__role" data-i18n="exp_role1">Software Developer</h3>
+              <p class="timeline__desc" data-i18n="exp_desc1">
+                Working on hardware–software integration in a <strong>Raspberry Pi–based</strong> system. Managing
+                system control and validation processes for <strong>Python-based</strong> applications. Responsible for
+                testing configuration-based structures in field environments and ensuring system stability.
               </p>
               <ul class="timeline__tags" aria-label="Technologies used">
-                <li>Python</li><li>Raspberry Pi</li><li>Network</li><li></li><li></li><li></li><li></li>
+                <li>Python</li>
+                <li>Raspberry Pi</li>
+                <li>Network</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
               </ul>
             </div>
           </li>
 
           <li class="timeline__item reveal-item">
             <div class="timeline__meta">
-              <time class="timeline__date">Oct – Nov 2024</time>
+              <time class="timeline__date" data-i18n="exp_mth2">Oct – Nov 2024</time>
               <span class="timeline__company">Morya AI Technologies</span>
             </div>
             <div class="timeline__body">
-              <h3 class="timeline__role">Artificial Intelligence Engineer Intern</h3>
-              <p class="timeline__desc">
-                Built a Python + BeautifulSoup <strong>web scraping pipeline</strong> that significantly improved data consistency across Turkish NLP datasets, enabling cleaner model training. Engineered full CRUD operations and <strong>REST APIs with Flask and MySQL</strong>, complete with a secure authentication layer — delivering a production-ready backend in a fast-paced AI environment. Also developed a React-based automated rent payment notification system, directly improving end-user experience.
+              <h3 class="timeline__role" data-i18n="exp_role2">Artificial Intelligence Engineer Intern</h3>
+              <p class="timeline__desc" data-i18n="exp_desc2">
+                Built a Python + BeautifulSoup <strong>web scraping pipeline</strong> that significantly improved data
+                consistency across Turkish NLP datasets, enabling cleaner model training. Engineered full CRUD
+                operations and <strong>REST APIs with Flask and MySQL</strong>, complete with a secure authentication
+                layer — delivering a production-ready backend in a fast-paced AI environment. Also developed a
+                React-based automated rent payment notification system, directly improving end-user experience.
               </p>
               <ul class="timeline__tags" aria-label="Technologies used">
-                <li>Python</li><li>BeautifulSoup</li><li>Flask</li><li>MySQL</li><li>React</li><li>REST API</li><li>NLP</li>
+                <li>Python</li>
+                <li>BeautifulSoup</li>
+                <li>Flask</li>
+                <li>MySQL</li>
+                <li>React</li>
+                <li>REST API</li>
+                <li>NLP</li>
               </ul>
             </div>
           </li>
 
           <li class="timeline__item reveal-item">
             <div class="timeline__meta">
-              <time class="timeline__date">Feb – May 2024</time>
+              <time class="timeline__date" data-i18n="exp_mth3">Feb – May 2024</time>
               <span class="timeline__company">LGYtech</span>
             </div>
             <div class="timeline__body">
-              <h3 class="timeline__role">Full Stack Developer Intern</h3>
-              <p class="timeline__desc">
-                Spearheaded improvements to the <strong>software testing suite in Go</strong>, raising code quality standards and contributing to more stable, reliable releases. Took ownership of the <strong>localization infrastructure</strong> for a multilingual application, enabling the product to reach wider audiences. Built the full project scaffolding from scratch — folder structure, core components, models, services, handlers, and a Vue.js control panel — while integrating Docker to streamline development workflows.
+              <h3 class="timeline__role" data-i18n="exp_role3">Full Stack Developer Intern</h3>
+              <p class="timeline__desc" data-i18n="exp_desc3">
+                Spearheaded improvements to the <strong>software testing suite in Go</strong>, raising code quality
+                standards and contributing to more stable, reliable releases. Took ownership of the <strong>localization
+                  infrastructure</strong> for a multilingual application, enabling the product to reach wider audiences.
+                Built the full project scaffolding from scratch — folder structure, core components, models, services,
+                handlers, and a Vue.js control panel — while integrating Docker to streamline development workflows.
               </p>
               <ul class="timeline__tags" aria-label="Technologies used">
-                <li>Go</li><li>Vue.js</li><li>Docker</li><li>REST API</li><li>Testing</li><li>Localization</li>
+                <li>Go</li>
+                <li>Vue.js</li>
+                <li>Docker</li>
+                <li>REST API</li>
+                <li>Testing</li>
+                <li>Localization</li>
               </ul>
             </div>
           </li>
 
           <li class="timeline__item reveal-item">
             <div class="timeline__meta">
-              <time class="timeline__date">Jul – Sep 2023</time>
+              <time class="timeline__date" data-i18n="exp_mth4">Jul – Sep 2023</time>
               <span class="timeline__company">Softayla</span>
             </div>
             <div class="timeline__body">
-              <h3 class="timeline__role">Software Developer Intern</h3>
-              <p class="timeline__desc">
-                Collaborated in a cross-functional team to build a <strong>Food App web application</strong> from concept to delivery. Focused on frontend development with React, Redux, and JavaScript while working in close coordination with the backend team — gaining practical experience in real-world agile collaboration, feature handoffs, and iterative product development.
+              <h3 class="timeline__role" data-i18n="exp_role4">Software Developer Intern</h3>
+              <p class="timeline__desc" data-i18n="exp_desc4">
+                Collaborated in a cross-functional team to build a <strong>Food App web application</strong> from
+                concept to delivery. Focused on frontend development with React, Redux, and JavaScript while working in
+                close coordination with the backend team — gaining practical experience in real-world agile
+                collaboration, feature handoffs, and iterative product development.
               </p>
               <ul class="timeline__tags" aria-label="Technologies used">
-                <li>React</li><li>Redux</li><li>JavaScript</li><li>CSS Modules</li><li>Teamwork</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>JavaScript</li>
+                <li>CSS Modules</li>
+                <li>Teamwork</li>
               </ul>
             </div>
           </li>
@@ -436,32 +514,32 @@
       <div class="section__inner">
         <header class="section__header">
           <span class="section__num" aria-hidden="true">04</span>
-          <h2 class="section__title" id="work-heading">Projects</h2>
+          <h2 class="section__title" id="work-heading" data-i18n="work_title">Projects</h2>
         </header>
 
-        <!-- Featured: Property Management System -->
+        <!-- Featured 1: Antalya Wings -->
         <article class="project-featured reveal-item" aria-label="Featured project">
           <div class="project-featured__meta">
-            <span class="project-featured__tag">Featured</span>
-            <span class="project-featured__tag">Full-Stack</span>
-            <span class="project-featured__tag">Flask · React</span>
+            <span class="project-featured__tag" data-i18n="proj_feat">Featured</span>
+            <span class="project-featured__tag" data-i18n="proj1_tag2">Freelance</span>
+            <span class="project-featured__tag" data-i18n="proj1_tag3">Web Development</span>
           </div>
           <div class="project-featured__body">
             <div class="project-featured__text">
               <span class="project-num" aria-hidden="true">01</span>
-              <h3 class="project-featured__title">Property Management System</h3>
-              <p class="project-featured__problem">
-                <strong>Problem:</strong> Property teams were managing tenant data, lease records, and notifications through scattered spreadsheets and manual emails.
-              </p>
-              <p class="project-featured__solution">
-                Built an end-to-end platform with a Flask REST backend and React frontend — JWT-secured endpoints, tenant record management, lease tracking, and automated email notifications via a clean API layer.
+              <h3 class="project-featured__title" data-i18n="proj1_title">Antalya Wings</h3>
+              <p class="project-featured__problem" data-i18n="proj1_desc1">
+                A custom freelance web project built for a client. It features a modern, responsive design tailored to
+                the client's brand and business needs.
               </p>
               <ul class="project-featured__tech" aria-label="Technologies used">
-                <li>Python</li><li>Flask</li><li>React</li><li>MySQL</li><li>JWT</li><li>REST API</li>
+                <li>Frontend</li>
+                <li>Web Design</li>
+                <li>Responsive UI</li>
               </ul>
               <div class="project-featured__actions">
-                <a href="#" class="btn btn--solid btn--sm">View Code</a>
-                <a href="#" class="btn btn--outline btn--sm">Live Demo</a>
+                <a href="https://antalyawings.com/" target="_blank" class="btn btn--outline btn--sm"
+                  data-i18n="btn_web">Go To Website</a>
               </div>
             </div>
             <div class="project-featured__mockup" aria-hidden="true">
@@ -470,25 +548,168 @@
                   <span class="mockup__dot"></span>
                   <span class="mockup__dot"></span>
                   <span class="mockup__dot"></span>
-                  <span class="mockup__file">app.py</span>
+                  <span class="mockup__file">antalyawings.com</span>
                 </div>
-                <pre class="mockup__code"><code><span class="t-kw">from</span> flask <span class="t-kw">import</span> Flask, jsonify
-<span class="t-kw">from</span> flask_jwt_extended <span class="t-kw">import</span> jwt_required
+                <!-- Dynamic Screenshot API -->
+                <img src="./assets/antalyawings1.png" alt="Antalya Wings Mockup"
+                  style="display:block; width:100%; aspect-ratio: 16/9; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+        </article>
 
-app = Flask(<span class="t-st">__name__</span>)
 
-<span class="t-cm"># Tenant management endpoints</span>
-@app.<span class="t-fn">route</span>(<span class="t-st">'/api/tenants'</span>)
-@<span class="t-fn">jwt_required</span>()
-<span class="t-kw">def</span> <span class="t-fn">get_tenants</span>():
-    tenants = Tenant.<span class="t-fn">query</span>.<span class="t-fn">all</span>()
-    <span class="t-kw">return</span> <span class="t-fn">jsonify</span>(tenants)
+        <!-- Featured 2: Law Firm Demo -->
+        <article class="project-featured reveal-item" aria-label="Featured project">
+          <div class="project-featured__meta">
+            <span class="project-featured__tag" data-i18n="proj_feat">Featured</span>
+            <span class="project-featured__tag" data-i18n="proj2_tag2">Demo</span>
+            <span class="project-featured__tag" data-i18n="proj2_tag3">Law Firm</span>
+          </div>
+          <div class="project-featured__body">
+            <div class="project-featured__text">
+              <span class="project-num" aria-hidden="true">02</span>
+              <h3 class="project-featured__title" data-i18n="proj2_title">Law Firm Portal Demo</h3>
+              <p class="project-featured__problem" data-i18n="proj2_desc1">
+                A professional demo website designed for law firms. Provides an elegant interface for listing legal
+                services, attorney profiles, and secure contact forms.
+              </p>
+              <ul class="project-featured__tech" aria-label="Technologies used">
+                <li>Frontend</li>
+                <li>UI/UX</li>
+                <li>Corporate</li>
+              </ul>
+              <div class="project-featured__actions">
+                <a href="https://hukuk-portali--bilgess.replit.app/" target="_blank" class="btn btn--outline btn--sm"
+                  data-i18n="btn_demo">Live Demo</a>
+              </div>
+            </div>
+            <div class="project-featured__mockup" aria-hidden="true">
+              <div class="mockup">
+                <div class="mockup__bar">
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__file">hukuk-portali.app</span>
+                </div>
+                <img src="./assets/hukuk1.png" alt="Law Firm Demo Mockup"
+                  style="display:block; width:100%; aspect-ratio: 16/9; object-fit: cover; object-position: top;">
+              </div>
+            </div>
+          </div>
+        </article>
 
-@app.<span class="t-fn">route</span>(<span class="t-st">'/api/leases'</span>, methods=[<span class="t-st">'POST'</span>])
-@<span class="t-fn">jwt_required</span>()
-<span class="t-kw">def</span> <span class="t-fn">create_lease</span>():
-    <span class="t-cm"># Create &amp; notify tenant via email</span>
-    <span class="t-fn">send_notification</span>(lease.tenant)</code></pre>
+
+        <!-- Featured 3: Dental Clinic Demo -->
+        <article class="project-featured reveal-item" aria-label="Featured project">
+          <div class="project-featured__meta">
+            <span class="project-featured__tag" data-i18n="proj_feat">Featured</span>
+            <span class="project-featured__tag" data-i18n="proj2_tag2">Demo</span>
+            <span class="project-featured__tag" data-i18n="proj3_tag3">Healthcare</span>
+          </div>
+          <div class="project-featured__body">
+            <div class="project-featured__text">
+              <span class="project-num" aria-hidden="true">03</span>
+              <h3 class="project-featured__title" data-i18n="proj3_title">Dental Clinic Demo</h3>
+              <p class="project-featured__problem" data-i18n="proj3_desc1">
+                A modern demo website concept created for dental clinics and healthcare professionals. Features a clean
+                design suitable for medical services and appointment generation.
+              </p>
+              <ul class="project-featured__tech" aria-label="Technologies used">
+                <li>Frontend</li>
+                <li>Web Design</li>
+                <li>Medical UI</li>
+              </ul>
+              <div class="project-featured__actions">
+                <a href="#" class="btn btn--outline btn--sm" data-i18n="btn_demo">Live Demo</a>
+              </div>
+            </div>
+            <div class="project-featured__mockup" aria-hidden="true">
+              <div class="mockup">
+                <div class="mockup__bar">
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__dot"></span>
+                  <span class="mockup__file" data-i18n="proj3_url">dental-clinic.demo</span>
+                </div>
+                <div style="position: relative; width: 100%; display: flex; align-items: center;">
+                  <button class="gallery-btn prev-btn" aria-label="Previous Image">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                  </button>
+                  <div
+                    style="display: flex; overflow-x: auto; scroll-snap-type: x mandatory; width: 100%; -ms-overflow-style: none; scrollbar-width: none;"
+                    class="gallery-scroll" id="dentalGallery">
+                    <img src="./assets/dental1.png" alt="Dental Clinic 1"
+                      style="width: 100%; flex-shrink: 0; scroll-snap-align: start; aspect-ratio: 16/9; object-fit: cover; object-position: top;">
+                    <img src="./assets/dental2.png" alt="Dental Clinic 2"
+                      style="width: 100%; flex-shrink: 0; scroll-snap-align: start; aspect-ratio: 16/9; object-fit: cover; object-position: top;">
+                    <img src="./assets/dental3.png" alt="Dental Clinic 3"
+                      style="width: 100%; flex-shrink: 0; scroll-snap-align: start; aspect-ratio: 16/9; object-fit: cover; object-position: top;">
+                    <img src="./assets/dental4.png" alt="Dental Clinic 4"
+                      style="width: 100%; flex-shrink: 0; scroll-snap-align: start; aspect-ratio: 16/9; object-fit: cover; object-position: top;">
+                    <img src="./assets/dental5.png" alt="Dental Clinic 5"
+                      style="width: 100%; flex-shrink: 0; scroll-snap-align: start; aspect-ratio: 16/9; object-fit: cover; object-position: top;">
+                  </div>
+                  <button class="gallery-btn next-btn" aria-label="Next Image">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </button>
+                </div>
+                <style>
+                  .gallery-scroll::-webkit-scrollbar {
+                    display: none;
+                  }
+
+                  .gallery-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: rgba(0, 0, 0, 0.4);
+                    color: white;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    z-index: 10;
+                    backdrop-filter: blur(4px);
+                    transition: all 0.2s ease;
+                  }
+
+                  .gallery-btn:hover {
+                    background: rgba(0, 0, 0, 0.8);
+                    border-color: rgba(255, 255, 255, 0.5);
+                  }
+
+                  .prev-btn {
+                    left: 1rem;
+                  }
+
+                  .next-btn {
+                    right: 1rem;
+                  }
+                </style>
+                <script>
+                  document.addEventListener('DOMContentLoaded', () => {
+                    const gallery = document.getElementById('dentalGallery');
+                    const nextBtn = document.querySelector('.next-btn');
+                    const prevBtn = document.querySelector('.prev-btn');
+                    if (gallery && nextBtn && prevBtn) {
+                      nextBtn.addEventListener('click', () => {
+                        gallery.scrollBy({ left: gallery.clientWidth, behavior: 'smooth' });
+                      });
+                      prevBtn.addEventListener('click', () => {
+                        gallery.scrollBy({ left: -gallery.clientWidth, behavior: 'smooth' });
+                      });
+                    }
+                  });
+                </script>
               </div>
             </div>
           </div>
@@ -497,101 +718,92 @@ app = Flask(<span class="t-st">__name__</span>)
         <!-- Project grid -->
         <div class="project-grid" role="list">
 
-          <article class="project-card reveal-item" role="listitem">
-            <div class="project-card__top">
-              <span class="project-num" aria-hidden="true">02</span>
-              <div class="project-card__links">
-                <a href="#" aria-label="View code on GitHub" title="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-              </div>
-            </div>
-            <span class="project-card__type">Enterprise · C# · .NET</span>
-            <h3 class="project-card__title">Inventory Management System</h3>
-            <p class="project-card__desc">
-              Business-grade stock control system with full CRUD operations, reporting dashboards, and role-based access control. Replaced a manual spreadsheet workflow.
-            </p>
-            <ul class="project-card__tech" aria-label="Technologies">
-              <li>C#</li><li>ASP.NET</li><li>SQL Server</li><li>REST API</li>
-            </ul>
-          </article>
-
-          <article class="project-card reveal-item" role="listitem">
-            <div class="project-card__top">
-              <span class="project-num" aria-hidden="true">03</span>
-              <div class="project-card__links">
-                <a href="#" aria-label="View code on GitHub" title="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-              </div>
-            </div>
-            <span class="project-card__type">Full-Stack · Go · Vue.js</span>
-            <h3 class="project-card__title">Product Pilot Platform</h3>
-            <p class="project-card__desc">
-              Built from scratch — Go web service with models, handlers, and repository layer. Full admin control panel in Vue.js with Docker containerisation and integration tests.
-            </p>
-            <ul class="project-card__tech" aria-label="Technologies">
-              <li>Go</li><li>Vue.js</li><li>Docker</li><li>REST API</li>
-            </ul>
-          </article>
-
+          <!-- 4. Property Management System -->
           <article class="project-card reveal-item" role="listitem">
             <div class="project-card__top">
               <span class="project-num" aria-hidden="true">04</span>
               <div class="project-card__links">
                 <a href="#" aria-label="View code on GitHub" title="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
                 </a>
               </div>
             </div>
-            <span class="project-card__type">Frontend · React · Redux</span>
-            <h3 class="project-card__title">Food Ordering App</h3>
+            <span class="project-card__type">Full-Stack · Flask · React</span>
+            <h3 class="project-card__title" data-i18n="proj_pms_title">Property Management System</h3>
             <p class="project-card__desc">
-              Production-ready food ordering interface with React and Redux — cart management, checkout flow, and clean component architecture using CSS Modules.
+              <span data-i18n="proj_prob1"><strong>Problem:</strong> Property teams were managing tenant data, lease
+                records, and notifications through scattered spreadsheets and manual emails.</span><br><br>
+              <span data-i18n="proj_sol1">Built an end-to-end platform with a Flask REST backend and React frontend —
+                JWT-secured endpoints, tenant record management, lease tracking, and automated email notifications via a
+                clean API layer.</span>
             </p>
             <ul class="project-card__tech" aria-label="Technologies">
-              <li>React</li><li>Redux</li><li>JavaScript</li><li>CSS Modules</li>
+              <li>Python</li>
+              <li>Flask</li>
+              <li>React</li>
+              <li>MySQL</li>
             </ul>
           </article>
+
+          <!-- 5. Date Fruit Classification -->
           <article class="project-card reveal-item" role="listitem">
             <div class="project-card__top">
-              <span class="project-num" aria-hidden="true">06</span>
+              <span class="project-num" aria-hidden="true">05</span>
               <div class="project-card__links">
-                <a href="#" aria-label="View code on GitHub" title="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                </a>
-                <a href="#" aria-label="Open live demo" title="Live Demo">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                <a href="https://github.com/BilgeBalga/-date-fruit-recognizer-image-classification-dataguess-assignment"
+                  aria-label="View code on GitHub" title="GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
                 </a>
               </div>
             </div>
             <span class="project-card__type">Deep Learning · Computer Vision</span>
             <h3 class="project-card__title">Date Fruit Classification</h3>
-            <p class="project-card__desc">
-              CNN model classifying 7 varieties of date fruit with 95%+ accuracy. Packaged as a Streamlit web app and deployed to Hugging Face Spaces.
+            <p class="project-card__desc" data-i18n="proj_desc5">
+              CNN model classifying 7 varieties of date fruit with 95%+ accuracy. Packaged as a Streamlit web app and
+              deployed to Hugging Face Spaces.
             </p>
             <ul class="project-card__tech" aria-label="Technologies">
-              <li>Python</li><li>TensorFlow</li><li>CNN</li><li>Streamlit</li>
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>CNN</li>
+              <li>Streamlit</li>
             </ul>
           </article>
 
+          <!-- 6. Emotia -->
           <article class="project-card reveal-item" role="listitem">
             <div class="project-card__top">
-              <span class="project-num" aria-hidden="true">07</span>
+              <span class="project-num" aria-hidden="true">06</span>
               <div class="project-card__links">
-                <a href="#" aria-label="View code on GitHub" title="GitHub">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <a href="https://github.com/Baths07/AI8" aria-label="View code on GitHub" title="GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
                 </a>
               </div>
             </div>
             <span class="project-card__type">AI Platform · NLP · FastAPI</span>
             <h3 class="project-card__title">Emotia</h3>
-            <p class="project-card__desc">
-              An AI-driven platform designed to detect and interpret human emotional signals through natural language processing. Combines real-time sentiment analysis with a scalable FastAPI backend to power emotionally-aware applications.
+            <p class="project-card__desc" data-i18n="proj_desc6">
+              An AI-driven platform designed to detect and interpret human emotional signals through natural language
+              processing. Combines real-time sentiment analysis with a scalable FastAPI backend to power
+              emotionally-aware applications.
             </p>
             <ul class="project-card__tech" aria-label="Technologies">
-              <li>Python</li><li>FastAPI</li><li>NLP</li><li>Scikit-learn</li><li>NLTK</li>
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>NLP</li>
+              <li>Scikit-learn</li>
             </ul>
+          </article>
+
         </div>
       </div>
     </section>
@@ -603,40 +815,55 @@ app = Flask(<span class="t-st">__name__</span>)
       <div class="section__inner">
         <header class="section__header">
           <span class="section__num" aria-hidden="true">05</span>
-          <h2 class="section__title" id="contact-heading">Let's talk</h2>
+          <h2 class="section__title" id="contact-heading" data-i18n="contact_title">Let's talk</h2>
         </header>
 
         <div class="contact-grid">
 
           <div class="contact-info reveal-item">
-            <p class="contact-info__lede">
-              I'm open to freelance projects, and interesting collaborations. Have a project in mind or just want to say hello — reach out.
+            <p class="contact-info__lede" data-i18n="contact_lede">
+              I'm open to freelance projects, and interesting collaborations. Have a project in mind or just want to say
+              hello — reach out.
             </p>
             <ul class="contact-info__list">
               <li>
-                <span class="contact-info__label">Email</span>
+                <span class="contact-info__label" data-i18n="contact_email">Email</span>
                 <a href="mailto:bilbalga@gmail.com" class="contact-info__val">bilbalga@gmail.com</a>
               </li>
               <li>
-                <span class="contact-info__label">Location</span>
+                <span class="contact-info__label" data-i18n="contact_loc">Location</span>
                 <span class="contact-info__val">Antalya, Turkey</span>
               </li>
             </ul>
             <div class="contact-info__socials">
               <a href="https://github.com/BilgeBalga" class="social-btn" target="_blank" rel="noopener noreferrer">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
                 GitHub
               </a>
-              <a href="https://www.linkedin.com/in/bilge-balga/" class="social-btn" target="_blank" rel="noopener noreferrer">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <a href="https://www.linkedin.com/in/bilge-balga/" class="social-btn" target="_blank"
+                rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
                 LinkedIn
               </a>
               <a href="mailto:bilbalga@gmail.com" class="social-btn">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                  aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
                 Email
               </a>
-               <a href="https://instagram.com/bilge.codes" class="social-btn" target="_blank" rel="noopener noreferrer">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              <a href="https://instagram.com/bilge.codes" class="social-btn" target="_blank" rel="noopener noreferrer">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                </svg>
                 Instagram
               </a>
             </div>
@@ -644,18 +871,23 @@ app = Flask(<span class="t-st">__name__</span>)
 
           <form class="contact-form reveal-item" id="contactForm" novalidate aria-label="Contact form">
             <div class="field">
-              <label class="field__label" for="f-name">Name</label>
-              <input class="field__input" type="text" id="f-name" name="name" placeholder="Your name" required autocomplete="name">
+              <label class="field__label" for="f-name" data-i18n="form_name">Name</label>
+              <input class="field__input" type="text" id="f-name" name="name" placeholder="Your name"
+                data-i18n-placeholder="form_name_ph" required autocomplete="name">
             </div>
             <div class="field">
-              <label class="field__label" for="f-email">Email</label>
-              <input class="field__input" type="email" id="f-email" name="email" placeholder="you@example.com" required autocomplete="email">
+              <label class="field__label" for="f-email" data-i18n="form_email">Email</label>
+              <input class="field__input" type="email" id="f-email" name="email" placeholder="you@example.com"
+                data-i18n-placeholder="form_email_ph" required autocomplete="email">
             </div>
             <div class="field">
-              <label class="field__label" for="f-message">Message</label>
-              <textarea class="field__input" id="f-message" name="message" rows="5" placeholder="Tell me about the project or opportunity…" required></textarea>
+              <label class="field__label" for="f-message" data-i18n="form_msg">Message</label>
+              <textarea class="field__input" id="f-message" name="message" rows="5"
+                placeholder="Tell me about the project or opportunity…" data-i18n-placeholder="form_msg_ph"
+                required></textarea>
             </div>
-            <button type="submit" class="btn btn--solid btn--full" id="formSubmit">Send Message</button>
+            <button type="submit" class="btn btn--solid btn--full" id="formSubmit" data-i18n="btn_submit">Send
+              Message</button>
           </form>
 
         </div>
@@ -670,11 +902,13 @@ app = Flask(<span class="t-st">__name__</span>)
   <footer class="footer">
     <div class="footer__inner">
       <span class="footer__logo">Bilge Balga</span>
-      <span class="footer__copy">&copy; 2026 — Designed &amp; built by Bilge Balga</span>
-      <a href="#hero" class="footer__top" aria-label="Back to top">Back to top ↑</a>
+      <span class="footer__copy" data-i18n="footer_copy">&copy; 2026 — Designed &amp; built by Bilge Balga</span>
+      <a href="#hero" class="footer__top" aria-label="Back to top" data-i18n="footer_top">Back to top ↑</a>
     </div>
   </footer>
 
+  <script src="lang.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

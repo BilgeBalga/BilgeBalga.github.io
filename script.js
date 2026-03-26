@@ -1,16 +1,9 @@
 'use strict';
-
-/* ================================================================
-   BILGE BALGA — PORTFOLIO
-   Minimal, purposeful JavaScript.
-   No libraries. No side effects.
-   ================================================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ============================================================
+  /*
      SCROLL PROGRESS BAR
-  ============================================================ */
+  */
   const scrollBar = document.getElementById('scrollBar');
 
   function updateScrollBar() {
@@ -19,14 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollBar.style.width = (max > 0 ? (window.scrollY / max) * 100 : 0) + '%';
   }
 
-  /* ============================================================
+  /* 
      NAVIGATION
      – Glass blur on scroll
      – Active link tracking
      – Mobile drawer
-  ============================================================ */
-  const nav      = document.getElementById('nav');
-  const burger   = document.getElementById('navBurger');
+    */
+  const nav = document.getElementById('nav');
+  const burger = document.getElementById('navBurger');
   const navLinks = document.getElementById('navLinks');
   const allLinks = document.querySelectorAll('.nav__link');
 
@@ -36,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function updateActiveLink() {
-    const sections  = document.querySelectorAll('section[id]');
+    const sections = document.querySelectorAll('section[id]');
     const threshold = window.innerHeight * 0.38;
     let current = '';
 
@@ -78,10 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ============================================================
+  /* 
      SCROLL-REVEAL — IntersectionObserver
      Stagger delay for sibling .reveal-item elements.
-  ============================================================ */
+   */
   function getStaggerDelay(el) {
     const siblings = [...el.parentElement.children].filter(c =>
       c.classList.contains('reveal-item')
@@ -93,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
 
-      const el    = entry.target;
+      const el = entry.target;
       const delay = el.classList.contains('reveal-item') ? getStaggerDelay(el) : 0;
 
       setTimeout(() => el.classList.add('is-visible'), delay);
@@ -106,9 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.reveal, .reveal-item').forEach(el => revealObs.observe(el));
 
-  /* ============================================================
+  /* 
      ANIMATED STAT COUNTERS
-  ============================================================ */
+   */
   const counterObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
@@ -122,14 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function animateCounter(el) {
-    const target   = parseInt(el.dataset.target, 10);
-    const suffix   = el.dataset.suffix || '+';
+    const target = parseInt(el.dataset.target, 10);
+    const suffix = el.dataset.suffix || '+';
     const duration = 1200;
-    const start    = performance.now();
+    const start = performance.now();
 
     const tick = now => {
       const progress = Math.min((now - start) / duration, 1);
-      const eased    = 1 - Math.pow(1 - progress, 3);
+      const eased = 1 - Math.pow(1 - progress, 3);
       el.textContent = Math.round(eased * target) + suffix;
       if (progress < 1) requestAnimationFrame(tick);
     };
@@ -137,16 +130,16 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(tick);
   }
 
-  /* ============================================================
+  /* 
      POINTER DEVICE DETECTION
      Parallax and tilt are meaningless on touch-only devices —
      skip them entirely to save battery and avoid jank.
-  ============================================================ */
+   */
   const isPointerDevice = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
-  /* ============================================================
+  /* 
      HERO MOUSE PARALLAX — subtle glow movement
-  ============================================================ */
+   */
   const glow1 = document.querySelector('.hero__glow--1');
   const glow2 = document.querySelector('.hero__glow--2');
 
@@ -183,17 +176,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ============================================================
+  /* 
      PROJECT CARD — subtle tilt on hover (pointer devices only)
-  ============================================================ */
+   */
   if (isPointerDevice) {
     document.querySelectorAll('.project-card').forEach(card => {
       card.addEventListener('mousemove', e => {
-        const rect   = card.getBoundingClientRect();
-        const x      = (e.clientX - rect.left) / rect.width  - 0.5;
-        const y      = (e.clientY - rect.top)  / rect.height - 0.5;
-        const tiltX  = y * -4;
-        const tiltY  = x *  4;
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        const tiltX = y * -4;
+        const tiltY = x * 4;
 
         card.style.transform = `perspective(600px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateZ(2px)`;
       });
@@ -204,17 +197,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ============================================================
+  /* 
      CONTACT FORM — Visual feedback
-  ============================================================ */
-  const form   = document.getElementById('contactForm');
+   */
+  const form = document.getElementById('contactForm');
   const submit = document.getElementById('formSubmit');
 
   if (form && submit) {
     form.querySelectorAll('.field__input').forEach(input => {
       input.addEventListener('blur', () => {
         if (!input.value.trim()) return;
-        input.classList.toggle('is-valid',   input.checkValidity());
+        input.classList.toggle('is-valid', input.checkValidity());
         input.classList.toggle('is-invalid', !input.checkValidity());
       });
 
@@ -226,28 +219,37 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', e => {
       e.preventDefault();
 
+      const name = document.getElementById('f-name').value.trim();
+      const email = document.getElementById('f-email').value.trim();
+      const message = document.getElementById('f-message').value.trim();
+
+      const subject = encodeURIComponent(`Portfolio Contact from ${name || 'Website Visitor'}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      window.location.href = `mailto:bilbalga@gmail.com?subject=${subject}&body=${body}`;
+
       const original = submit.textContent;
       submit.textContent = 'Message sent ✓';
-      submit.disabled    = true;
-      submit.style.background   = '#1a4d10';
-      submit.style.borderColor  = '#2a6a18';
-      submit.style.color        = '#c8ff6e';
+      submit.disabled = true;
+      submit.style.background = '#1a4d10';
+      submit.style.borderColor = '#2a6a18';
+      submit.style.color = '#c8ff6e';
 
       setTimeout(() => {
-        submit.textContent  = original;
-        submit.disabled     = false;
-        submit.style.background  = '';
+        submit.textContent = original;
+        submit.disabled = false;
+        submit.style.background = '';
         submit.style.borderColor = '';
-        submit.style.color       = '';
+        submit.style.color = '';
         form.reset();
         form.querySelectorAll('.field__input').forEach(i => i.classList.remove('is-valid'));
       }, 3500);
     });
   }
 
-  /* ============================================================
+  /* 
      MASTER SCROLL HANDLER — rAF-throttled
-  ============================================================ */
+   */
   let ticking = false;
 
   window.addEventListener('scroll', () => {
