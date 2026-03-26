@@ -14,22 +14,20 @@ const translations = {
    "hero_btn_contact": { en: "Contact", tr: "İletişim" },
 
    "svc_title1": { en: "Backend Engineering", tr: "Backend Geliştirme" },
-   "svc_desc1": { en: "Developing scalable REST APIs and backend services using Python, FastAPI, Flask, and Go. Building production-ready solutions with JWT-based security, database design (MySQL, MongoDB), and hardware–software integration in Raspberry Pi-based systems", tr: "Python, FastAPI, Flask ve Go kullanarak ölçeklenebilir REST API'ler ve backend servisleri geliştiriyorum. Ahududu Pi tabanlı sistemlerde JWT güvenliği, veritabanı tasarımı (MySQL, MongoDB) ve donanım-yazılım entegrasyonu ile üretime hazır çözümler oluşturuyorum." },
+   "svc_desc1": { en: "Developing scalable REST APIs and backend services using Python, FastAPI, Flask, and Go. Providing production-ready solutions with JWT-based security, database design (MySQL, MongoDB), and hardware–software integration in Raspberry Pi-based systems.", tr: "Python, FastAPI, Flask, Go kullanarak ölçeklenebilir REST API'ler ve backend servisleri geliştiriyorum. Raspberry Pi tabanlı sistemlerde JWT güvenliği, veritabanı tasarımı (MySQL, MongoDB) ve donanım-yazılım entegrasyonu ile üretime hazır çözümler sunuyorum." },
    "svc_title2": { en: "AI & ML Integration", tr: "Yapay Zeka ve Machine Learning Entegrasyonu" },
-   "svc_desc2": { en: "I got practical experience in machine learning by working on various AI projects. I also worked as a volunteer assistant instructor in this field. In one specific project, I used Natural Language Processing (NLP). I did data cleaning, tokenization, and model integration using tools like Scikit-learn, TensorFlow.", tr: "Geliştirdiğim çeşitli projelerle makine öğrenmesi ve yapay zeka entegrasyonu konularında pratik deneyim edindim. Geçmişte bu alanda gönüllü asistan eğitmen olarak görev aldım. Özel bir projede Doğal Dil İşleme (NLP) tekniklerini kullanarak veri temizleme ve tokenizasyon süreçlerini yürüttüm; model oluşturmak için Scikit-learn, TensorFlow ve NLTK gibi araçlar kullandım." },
-   "svc_title3": { en: "Data Pipelines & Scraping", tr: "Veri Boru Hatları ve Veri Kazıma" },
-   "svc_desc3": { en: "Developing web scraping processes with BeautifulSoup and Pandas for large-scale data collection and processing. Cleaning and optimizing raw data to create high-quality datasets for NLP models.", tr: "Büyük ölçekli veri toplama ve işleme için BeautifulSoup ve Pandas ile web kazıma süreçleri geliştiriyorum. NLP modelleri için yüksek kaliteli veri setleri oluşturmak amacıyla ham verileri temizliyor ve optimize ediyorum." },
+   "svc_desc2": { en: "Integrating machine learning models into practical systems. Managing data cleaning and tokenization processes using NLP techniques. Utilizing tools like Scikit-learn, TensorFlow, and NLTK for model creation.", tr: "Makine öğrenmesi modellerini pratik sistemlere entegre ediyorum. NLP teknikleriyle veri temizleme ve tokenizasyon süreçlerini yürütüyorum. Model oluşturmak için Scikit-learn, TensorFlow ve NLTK gibi araçlar kullanıyorum." },
    "hero_scroll": { en: "Scroll", tr: "Kaydır" },
 
    "about_title": { en: "About", tr: "Hakkımda" },
    "about_who": { en: "Who I am", tr: "Ben Kimim" },
    "about_p1": {
-      en: "I am Bilge Balga. I graduated with a degree in <strong> Computer Engineering </strong> in 2024. I am a software developer focusing on backend development and machine learning.\nCurrently, I work in hardware and software integration; I manage the <strong> Python </strong> development processes of  <strong> Raspberry Pi-based </strong> systems. In my previous experiences, I developed full-stack web projects using Go, React, and Vue.js. I also built the backend and APIs of a real estate system with Python Flask, and performed data optimizations for NLP models.",
-      tr: "Ben Bilge Balga. 2024 yılında <strong> Bilgisayar Mühendisliği </strong> bölümünden mezun oldum. Backend geliştirme ve Machine Learning odaklı bir yazılım geliştiricisiyim.<br>Şu anda donanım ve yazılım entegrasyonu alanında çalışıyorum; <strong> Raspberry Pi </strong> tabanlı sistemlerin <strong> Python </strong> geliştirme süreçlerini yönetiyorum. Önceki deneyimlerimde Go, React ve Vue.js kullanarak full-stack projeler geliştirdim. Ayrıca Python Flask ile bir emlak sisteminin backend ve API'lerini kurdum ve NLP modelleri için veri optimizasyonları gerçekleştirdim."
+      "en": "Hi, I'm Bilge, a software developer focused on <strong>Backend</strong> architectures and <strong>Machine Learning</strong>. As a 2024 Computer Engineering graduate, I currently manage hardware-software integration and <strong>Python</strong> development for <strong>Raspberry Pi</strong> systems.",
+      "tr": "Merhaba, ben Bilge. <strong>Backend</strong> mimarileri ve <strong>Machine Learning</strong> odaklı bir yazılım geliştiriciyim. 2024 Bilgisayar Mühendisliği mezunu olarak, şu an <strong>Raspberry Pi</strong> tabanlı sistemlerde donanım-yazılım entegrasyonunu ve <strong>Python</strong> geliştirme süreçlerini yönetiyorum."
    },
    "about_p2": {
-      en: "Outside of my professional work, I constantly keep creating; along with my personal projects, I develop customer automations for clinics and custom web projects for companies. Additionally, I previously contributed to knowledge sharing by working as an assistant instructor at BTK Academy and Tech Istanbul.\nMy goal is to build simple and sustainable systems that solve complex problems with technology.",
-      tr: "Profesyonel iş hayatımın dışında sürekli üretmeye devam ediyorum; kişisel projelerimin yanı sıra klinikler için müşteri otomasyonları ve şirketler için özel web projeleri geliştiriyorum. Ayrıca daha önce BTK Akademi ve Tech İstanbul'da eğitmen yardımcısı olarak bilgi paylaşımına katkıda bulundum.<br>Amacım karmaşık problemleri teknoloji ile çözen basit ve sürdürülebilir sistemler kurmaktır."
+      "en": "Previously, I built end-to-end <strong>full-stack</strong> projects with <strong>Go</strong>, <strong>Python</strong>, <strong>Flask</strong>, <strong>React</strong>, and <strong>Vue.js</strong>. I don't just write code; I build solutions for real-world problems: developing freelance websites and contributing to the ecosystem as an assistant instructor at BTK Academy & Tech Istanbul. My goal is to transform complex problems into <strong>simple, scalable, and sustainable systems</strong>.",
+      "tr": "Daha önce <strong>Go</strong>, <strong>Python</strong>, <strong>Flask</strong>, <strong>React</strong> ve <strong>Vue.js</strong> ile uçtan uca <strong>full-stack</strong> projeler yaptım; <strong>Python Flask</strong> ile ölçeklenebilir ve ihtiyaca uygun API'lar kurdum. Sadece kod yazmıyor, gerçek dünya sorunlarına çözüm üretiyorum: Freelance web siteleri geliştiriyor aynı zamanda portfoy oluşturuyorum. BTK Akademi & Tech Istanbul'da eğitmen yardımcısı olarak ekosisteme katkı sağladım. Karmaşık problemleri <strong>sade, ölçeklenebilir ve sürdürülebilir sistemlere</strong> dönüştüren çözümler geliştiriyorum."
    },
    "about_now": { en: "Currently working on", tr: "Şu anda üzerinde çalıştıklarım" },
    "now_li1": { en: "Raspberry Pi-based systems", tr: "Raspberry Pi tabanlı sistemler" },
@@ -41,6 +39,8 @@ const translations = {
    "stat_int": { en: "Internships", tr: "Stajlar" },
    "loc_label": { en: "Based in", tr: "Konum" },
    "loc_val": { en: "Antalya, Turkey", tr: "Antalya, Türkiye" },
+   "open_to_work": { en: "Available for freelance projects", tr: "Freelance projelere açık" },
+
    "certs_label": { en: "Leadership &amp; Recognition", tr: "Liderlik & Sertifikalar" },
    "cert1": { en: "AI Expertise Bootcamp Instructor — Tech Istanbul", tr: "Yapay Zeka Uzmanlık Eğitmeni — Tech İstanbul" },
    "cert2": { en: "Advanced ML &amp; AI Workshop Instructor — BTK Academy", tr: "İleri Seviye ML & AI Eğitmeni — BTK Akademi" },
@@ -49,12 +49,12 @@ const translations = {
    "stack_title": { en: "Stack", tr: "Teknolojiler" },
    "stack_col1": { en: "Languages", tr: "Diller" },
    "stack_col2": { en: "Web & APIs", tr: "Web & API'ler" },
-   "stack_col3": { en: "Tools", tr: "Araçlar" },
+   "stack_col3": { en: "Tools & Databases", tr: "Araçlar & Veritabanları" },
    "stack_col4": { en: "AI & Data Science", tr: "Yapay Zeka & Veri Bilimi" },
    "stack_col5": { en: "Embedded & Vision", tr: "Gömülü Sistemler & Görüntü İşleme" },
 
    "exp_title": { en: "Experience", tr: "Deneyim" },
-   "exp_mth1": { en: "Oct – Nov 2024", tr: "Eki – Kas 2024" },
+   "exp_mth1": { en: "Dec 2025 - Present", tr: "Aralık 2025 - Devam Ediyor" },
    "exp_role1": { en: "Software Developer", tr: "Yazılım Geliştirici" },
    "exp_desc1": {
       en: "Working on hardware–software integration in a <strong>Raspberry Pi–based</strong> system. Managing system control and validation processes for <strong>Python-based</strong> applications. Responsible for testing configuration-based structures in field environments and ensuring system stability.",

@@ -25,9 +25,9 @@
   <!-- Scroll progress line -->
   <div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
 
-  <!-- ======================================================
+  <!-- 
        NAVIGATION
-  ====================================================== -->
+   -->
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#" class="nav__logo" aria-label="Back to top">BB</a>
@@ -56,9 +56,9 @@
 
   <main>
 
-    <!-- ======================================================
+    <!-- 
          HERO
-    ====================================================== -->
+     -->
     <section id="hero" class="hero" aria-label="Introduction">
 
       <!-- Background: glows + grid -->
@@ -149,13 +149,7 @@
               data cleaning, tokenization, and data preparation for models. Using Scikit-learn, TensorFlow, and NLTK to
               build models and integrate AI into backend systems.</p>
           </div>
-          <div class="service-tile reveal-item">
-            <span class="service-num" aria-hidden="true">03</span>
-            <h2 class="service-title" data-i18n="svc_title3">Data Pipelines & Scraping</h2>
-            <p class="service-desc" data-i18n="svc_desc3">Developing web scraping processes with BeautifulSoup and
-              Pandas for large-scale data collection and processing. Cleaning and optimizing raw data to create
-              high-quality datasets for NLP models.</p>
-          </div>
+
         </aside>
 
       </div>
@@ -166,9 +160,9 @@
       </div>
     </section>
 
-    <!-- ======================================================
+    <!-- 
          ABOUT — BENTO GRID
-    ====================================================== -->
+     -->
     <section id="about" class="section reveal" aria-labelledby="about-heading">
       <div class="section__inner">
         <header class="section__header">
@@ -178,22 +172,18 @@
 
         <div class="bento" role="region" aria-label="About me">
 
-          <!-- Bio -->
           <article class="bento__cell bento__cell--bio">
             <p class="label" data-i18n="about_who">Who I am</p>
             <p class="bento__bio-text" data-i18n="about_p1">
-              I am Bilge Balga. I graduated with a degree in <strong> Computer Engineering </strong> in 2024. I am a
-              software developer focusing on backend development and machine learning.
-              Currently, I work in hardware and software integration; I manage the <strong> Python </strong> development
-              processes of <strong> Raspberry Pi-based </strong> systems. In my previous experiences, I developed
-              full-stack web projects using Go, React, and Vue.js. I also built the backend and APIs of a real estate
-              system with Python Flask, and performed data optimizations for NLP models.
+              Hi, I'm Bilge, a 2024 <strong>Computer Engineering</strong> graduate focused on <strong>Backend</strong>
+              and <strong>Machine Learning</strong>. Currently, I manage hardware-software integration and
+              <strong>Python</strong> development for <strong>Raspberry Pi</strong> systems.
             </p>
             <p class="bento__bio-text" data-i18n="about_p2">
-              Outside of my professional work, I constantly keep creating; along with my personal projects, I develop
-              customer automations for clinics and custom web projects for companies. Additionally, I previously
-              contributed to knowledge sharing by working as an assistant instructor at BTK Academy and Tech Istanbul.
-              My goal is to build simple and sustainable systems that solve complex problems with technology.
+              Previously, I built <strong>full-stack</strong> projects with <strong>Go</strong>, <strong>React</strong>,
+              and <strong>Vue.js</strong>, and developed <strong>Python Flask</strong> APIs with <strong>NLP</strong>
+              optimizations. I also build automations for clinics and mentor in tech communities. My goal: solving
+              complex problems with <strong>simple, sustainable systems</strong>.
             </p>
           </article>
 
@@ -224,10 +214,26 @@
           </article>
 
           <!-- Location -->
-          <article class="bento__cell bento__cell--loc">
-            <p class="label" data-i18n="loc_label">Based in</p>
-            <p class="bento__city" data-i18n="loc_val">Antalya, Turkey</p>
-            <!-- <span class="bento__avail">Open to remote &amp; on-site</span> -->
+          <article class="bento__cell bento__cell--loc"
+            style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+            <div>
+              <p class="label" data-i18n="loc_label">Based in</p>
+              <p class="bento__city" data-i18n="loc_val">Antalya, Turkey</p>
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem;">
+                <span class="pulse-dot"></span>
+                <span class="bento__avail" data-i18n="open_to_work"
+                  style="font-size: var(--t-xs); color: var(--tx-2); font-family: var(--f-mono); opacity: 0.8;">Available
+                  for remote & hybrid</span>
+              </div>
+            </div>
+            <div class="loc-globe" style="opacity: 0.4;">
+              <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+              </svg>
+            </div>
           </article>
 
           <!-- Leadership -->
@@ -245,9 +251,9 @@
       </div>
     </section>
 
-    <!-- ======================================================
+    <!-- 
          TECH STACK
-    ====================================================== -->
+     -->
     <section id="stack" class="section reveal" aria-labelledby="stack-heading">
       <div class="section__inner">
         <header class="section__header">
@@ -335,32 +341,7 @@
             </ul>
           </div>
 
-          <div class="stack-col reveal-item">
-            <h3 class="stack-col__title" data-i18n="stack_col4">AI & Data Science</h3>
-            <ul class="stack-list">
-              <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/tensorflow/tensorflow-original.svg"
-                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
-                TensorFlow
-              </li>
-              <li class="stack-item">
-                <img
-                  src="data:image/png;base64,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"
-                  alt="" width="20" height="20" loading="lazy" aria-hidden="true">
-                Scikit-learn
-              </li>
-              <li class="stack-item">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/icons/pandas/pandas-original.svg" alt=""
-                  width="20" height="20" loading="lazy" aria-hidden="true">
-                Pandas / NumPy
-              </li>
-              <li class="stack-item">
-                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="" width="20"
-                  height="20" loading="lazy" aria-hidden="true">
-                Streamlit / HuggingFace
-              </li>
-            </ul>
-          </div>
+
 
           <div class="stack-col reveal-item">
             <h3 class="stack-col__title" data-i18n="stack_col5">Embedded & Vision</h3>
@@ -393,9 +374,9 @@
       </div>
     </section>
 
-    <!-- ======================================================
+    <!-- 
          EXPERIENCE
-    ====================================================== -->
+     -->
     <section id="experience" class="section reveal" aria-labelledby="exp-heading">
       <div class="section__inner">
         <header class="section__header">
@@ -407,7 +388,7 @@
 
           <li class="timeline__item reveal-item">
             <div class="timeline__meta">
-              <time class="timeline__date" data-i18n="exp_mth1">Oct – Nov 2024</time>
+              <time class="timeline__date" data-i18n="exp_mth1">– Dec 2025 - Present </time>
               <span class="timeline__company">Bexfa Technologies</span>
             </div>
             <div class="timeline__body">
@@ -421,10 +402,6 @@
                 <li>Python</li>
                 <li>Raspberry Pi</li>
                 <li>Network</li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
               </ul>
             </div>
           </li>
@@ -507,9 +484,9 @@
       </div>
     </section>
 
-    <!-- ======================================================
+    <!-- 
          PROJECTS
-    ====================================================== -->
+     -->
     <section id="work" class="section reveal" aria-labelledby="work-heading">
       <div class="section__inner">
         <header class="section__header">
@@ -808,9 +785,9 @@
       </div>
     </section>
 
-    <!-- ======================================================
+    <!-- 
          CONTACT
-    ====================================================== -->
+     -->
     <section id="contact" class="section reveal" aria-labelledby="contact-heading">
       <div class="section__inner">
         <header class="section__header">
@@ -896,9 +873,9 @@
 
   </main>
 
-  <!-- ======================================================
+  <!-- 
        FOOTER
-  ====================================================== -->
+   -->
   <footer class="footer">
     <div class="footer__inner">
       <span class="footer__logo">Bilge Balga</span>
