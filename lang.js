@@ -1,6 +1,6 @@
 const translations = {
    "nav_about": { en: "About", tr: "Hakkımda" },
-   "nav_stack": { en: "Stack", tr: "Teknolojiler" },
+   "nav_stack": { en: "Skills", tr: "Beceriler" },
    "nav_exp": { en: "Experience", tr: "Deneyim" },
    "nav_work": { en: "Projects", tr: "Projeler" },
    "nav_contact": { en: "Contact", tr: "İletişim" },
