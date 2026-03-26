@@ -46,11 +46,10 @@ const translations = {
    "cert2": { en: "Advanced ML &amp; AI Workshop Instructor — BTK Academy", tr: "İleri Seviye ML & AI Eğitmeni — BTK Akademi" },
    "cert3": { en: "GDG Antalya Community Member", tr: "GDG Antalya Topluluk Üyesi" },
 
-   "stack_title": { en: "Stack", tr: "Teknolojiler" },
+   "stack_title": { en: "Skills", tr: "Beceriler" },
    "stack_col1": { en: "Languages", tr: "Diller" },
    "stack_col2": { en: "Web & APIs", tr: "Web & API'ler" },
    "stack_col3": { en: "Tools & Databases", tr: "Araçlar & Veritabanları" },
-   "stack_col4": { en: "AI & Data Science", tr: "Yapay Zeka & Veri Bilimi" },
    "stack_col5": { en: "Embedded & Vision", tr: "Gömülü Sistemler & Görüntü İşleme" },
 
    "exp_title": { en: "Experience", tr: "Deneyim" },
