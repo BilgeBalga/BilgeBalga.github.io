@@ -1,7 +1,5 @@
 # Bilge Balga - Personal Developer Portfolio
 
-[![Deploy](https://github.com/BilgeBalga/BilgeBalga.github.io/actions/workflows/pages/build.yml/badge.svg)](https://BilgeBalga.github.io)
-
 Welcome to the source code of my personal developer portfolio! This repository holds the frontend codebase for my interactive, responsive, and bilingual portfolio site showcasing my projects, tech stack, and professional experience.
 
 🌐 **Live URL:** [https://BilgeBalga.github.io](https://BilgeBalga.github.io)
