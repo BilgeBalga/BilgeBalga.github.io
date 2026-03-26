@@ -1581,7 +1581,8 @@ html {
   }
 
   .hero__services {
-    display: none;
+    display: flex;
+    margin-top: 1rem;
   }
 
   /* Bento: 2-column, reset all explicit grid placements */
