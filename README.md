@@ -1,5 +1,3 @@
-<img width="1498" height="757" alt="website" src="https://github.com/user-attachments/assets/67b89c63-2b93-4957-ba0e-b1dd51d9d5b2" /># Bilge Balga - Personal Developer Portfolio
-
 Welcome to the source code of my personal developer portfolio! This repository holds the frontend codebase for my interactive, responsive, and bilingual portfolio site showcasing my projects, tech stack, and professional experience.
 
 🌐 **Live URL:** [https://BilgeBalga.github.io](https://BilgeBalga.github.io)
@@ -24,7 +22,7 @@ Welcome to the source code of my personal developer portfolio! This repository h
 ```
 ## 🌐 Preview
 
-![Portfolio Preview](<img width="1505" height="760" alt="image" src="https://github.com/user-attachments/assets/649d6be3-e538-4f89-88d0-72ae6952ed9c" />)
+![Portfolio Preview](<img width="1505" height="760" alt="image" src="https://github.com/user-attachments/assets/67b89c63-2b93-4957-ba0e-b1dd51d9d5b2" />)
 
 ## 📬 Contact
 
