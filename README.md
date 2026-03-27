@@ -1,3 +1,5 @@
+# Bilge Balga - Personal Developer Portfolio
+
 Welcome to the source code of my personal developer portfolio! This repository holds the frontend codebase for my interactive, responsive, and bilingual portfolio site showcasing my projects, tech stack, and professional experience.
 
 🌐 **Live URL:** [https://BilgeBalga.github.io](https://BilgeBalga.github.io)
