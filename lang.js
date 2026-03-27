@@ -44,7 +44,6 @@ const translations = {
    "certs_label": { en: "Leadership &amp; Recognition", tr: "Liderlik & Sertifikalar" },
    "cert1": { en: "AI Expertise Bootcamp Instructor — Tech Istanbul", tr: "Yapay Zeka Uzmanlık Eğitmeni — Tech İstanbul" },
    "cert2": { en: "Advanced ML &amp; AI Workshop Instructor — BTK Academy", tr: "İleri Seviye ML & AI Eğitmeni — BTK Akademi" },
-   "cert3": { en: "GDG Antalya Community Member", tr: "GDG Antalya Topluluk Üyesi" },
 
    "stack_title": { en: "Skills", tr: "Beceriler" },
    "stack_col1": { en: "Languages", tr: "Diller" },

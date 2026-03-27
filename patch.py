@@ -67,7 +67,6 @@ text = text.replace('<p class="bento__city">Antalya, Turkey</p>', '<p class="ben
 text = text.replace('<p class="label">Leadership &amp; Recognition</p>', '<p class="label" data-i18n="certs_label">Leadership &amp; Recognition</p>')
 text = text.replace('<li>AI Expertise Bootcamp Instructor — Tech Istanbul</li>', '<li data-i18n="cert1">AI Expertise Bootcamp Instructor — Tech Istanbul</li>')
 text = text.replace('<li>Advanced ML &amp; AI Workshop Instructor — BTK Academy</li>', '<li data-i18n="cert2">Advanced ML &amp; AI Workshop Instructor — BTK Academy</li>')
-text = text.replace('<li>GDG Antalya Community Member</li>', '<li data-i18n="cert3">GDG Antalya Community Member</li>')
 
 text = text.replace('<h2 class="section__title" id="stack-heading">Stack</h2>', '<h2 class="section__title" id="stack-heading" data-i18n="stack_title">Stack</h2>')
 text = text.replace('<h3 class="stack-col__title">Languages</h3>', '<h3 class="stack-col__title" data-i18n="stack_col1">Languages</h3>')
