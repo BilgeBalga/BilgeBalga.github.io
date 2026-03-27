@@ -24,7 +24,7 @@ Welcome to the source code of my personal developer portfolio! This repository h
 ```
 ## 🌐 Preview
 
-![Portfolio Preview](<img width="1505" height="760" alt="image" src="https://github.com/user-attachments/assets/67b89c63-2b93-4957-ba0e-b1dd51d9d5b2" />)
+![Portfolio Preview](<img width="1505" height="760" alt="image" src="https://image2url.com/r2/default/images/1774600444433-1c0cdf8f-9790-421c-8739-1a056a0af3df.png" />)
 
 ## 📬 Contact
 
