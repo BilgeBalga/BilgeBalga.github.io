@@ -22,9 +22,6 @@ Welcome to the source code of my personal developer portfolio! This repository h
 ├── lang.js             # Contains the translation dictionaries for EN/TR support
 └── README.md           # You are here!
 ```
-## 🌐 Preview
-
-![Portfolio Preview](<img width="1505" height="760" alt="image" src="https://image2url.com/r2/default/images/1774600444433-1c0cdf8f-9790-421c-8739-1a056a0af3df.png" />)
 
 ## 📬 Contact
 
