@@ -123,8 +123,8 @@ const translations = {
       tr: "7 farklı hurma çeşidini %95+ doğrulukla sınıflandıran CNN modeli. Streamlit web uygulaması olarak paketlendi ve Hugging Face Spaces üzerinde canlıya alındı."
    },
    "proj_desc6": {
-      en: "An AI-driven platform designed to detect and interpret human emotional signals through natural language processing. Combines real-time sentiment analysis with a scalable FastAPI backend to power emotionally-aware applications.",
-      tr: "Doğal dil işleme (NLP) aracılığıyla insan duygu sinyallerini algılamak ve yorumlamak üzere tasarlanmış yapay zeka destekli bir platform. Duygu odaklı uygulamaları güçlendirmek için gerçek zamanlı duygu analiziyle ölçeklenebilir FastAPI backend'ini birleştirir."
+      en: "An AI-driven platform designed to detect and interpret human emotional signals through Gemini Api Key. Combines real-time sentiment analysis with a scalable FastAPI backend to power emotionally-aware applications.",
+      tr: "Gemini Api Key ile insan duygu sinyallerini algılamak ve yorumlamak üzere tasarlanmış yapay zeka destekli bir platform. Duygu odaklı uygulamaları güçlendirmek için gerçek zamanlı duygu analiziyle ölçeklenebilir FastAPI backend'ini birleştirir."
    },
 
    "contact_title": { en: "Let's talk", tr: "İletişime Geçin" },
