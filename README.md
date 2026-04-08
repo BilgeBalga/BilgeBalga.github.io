@@ -27,7 +27,7 @@ Welcome to the source code of my personal developer portfolio! This repository h
 
 I am open to freelance projects and interesting collaborations! 
 - **Email:** bilbalga@gmail.com
-- **LinkedIn:** [Bilge Balga](#)
+- **LinkedIn:** [Bilge Balga](https://www.linkedin.com/in/bilge-balga/)
 - **GitHub:** [@BilgeBalga](https://github.com/BilgeBalga)
 
 ---
